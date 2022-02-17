@@ -16,10 +16,15 @@
 
     3) Download Java for Allure report   
     4) Create new file with name .env and add data as below:
+    
            email=""<add registered email>
+   
            password="" <add password for registered email>
+   
            otrium_url="https://www.otrium.com/"
+   
            accesskey="9ca1df2d52bcab5998fc02b506fd1a90"
+   
            APIUrl="http://api.weatherstack.com/"
           
                      
