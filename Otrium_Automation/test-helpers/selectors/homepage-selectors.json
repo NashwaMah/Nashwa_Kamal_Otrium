@@ -1,0 +1,10 @@
+{
+    "searchinput": "input[data-testid='search-input']",
+    "items": "b",
+    "closeOnBoarding": "a[data-testid='close-onboarding']",
+    "products": "div[data-testid='product-card']",
+    "profileIcon": "button[data-testid='main-header-my-account-button']",
+    "search_suggestion": ".css-kicnke",
+    "search_results": ".css-9atgp4",
+    "reject_add": "button[data-testid='close-cta']"
+}

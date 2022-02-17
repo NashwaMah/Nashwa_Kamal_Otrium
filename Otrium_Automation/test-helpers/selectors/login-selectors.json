@@ -1,0 +1,6 @@
+{
+    "signin": ".css-pcfkpj",
+    "email": "input[data-testid='input']",
+    "Password": "input[data-testid='login-form-password-input']",
+    "submitBtn": "button[data-testid='login-form-login-button']"
+}

@@ -1,0 +1,39 @@
+{
+  "name": "otrium-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test:chrome": "testcafe chrome  ./Otrium_Automation/tests --reporter allure,html:HTML-Reports/otrium.html -s takeOnFails=true,path=artifacts/screenshots/otrium,pathPattern='${DATE}_${TIME}/test-${TEST_INDEX}/${USERAGENT}/${TEST}_${FILE_INDEX}.png' --skip-js-errors --disable-page-caching ,spec --video artifacts/videos --video-options singleFile=true",
+    "test:firefox": "testcafe firefox  ./Otrium_Automation/tests  --reporter allure,html:HTML-Reports/otrium.html -s takeOnFails=true,path=artifacts/screenshots/otrium,pathPattern='${DATE}_${TIME}/test-${TEST_INDEX}/${USERAGENT}/${TEST}_${FILE_INDEX}.png' --skip-js-errors --disable-page-caching ,spec --video artifacts/videos --video-options singleFile=true",
+    "test:edge": "testcafe edge  ./Otrium_Automation/tests  --reporter allure,html:HTML-Reports/otrium.html -s takeOnFails=true,path=artifacts/screenshots/otrium,pathPattern='${DATE}_${TIME}/test-${TEST_INDEX}/${USERAGENT}/${TEST}_${FILE_INDEX}.png' --skip-js-errors --disable-page-caching ,spec --video artifacts/videos --video-options singleFile=true",
+    "test:safari": "testcafe safari  ./Otrium_Automation/tests  --reporter allure,html:HTML-Reports/otrium.html -s takeOnFails=true,path=artifacts/screenshots/otrium,pathPattern='${DATE}_${TIME}/test-${TEST_INDEX}/${USERAGENT}/${TEST}_${FILE_INDEX}.png' --skip-js-errors --disable-page-caching ,spec --video artifacts/videos --video-options singleFile=true",
+    "test:api": "testcafe chrome:headless  ./WeatherAPITest/tests  --skip-js-errors --disable-page-caching"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NashwaMah/Nashwa-Kamal-Otrium.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NashwaMah/Nashwa-Kamal-Otrium/issues"
+  },
+  "homepage": "https://github.com/NashwaMah/Nashwa-Kamal-Otrium#readme",
+  "dependencies": {
+    "@ffmpeg-installer/ffmpeg": "^1.1.0",
+    "allure": "0.0.0",
+    "allure-commandline": "^2.13.0",
+    "axios": "^0.26.0",
+    "date": "^1.0.2",
+    "dotenv": "^8.6.0",
+    "form-data": "^3.0.0",
+    "request-ip": "^2.1.3",
+    "testcafe": "^1.16.1",
+    "testcafe-reporter-allure": "^1.0.5",
+    "testcafe-reporter-html": "^1.4.6"
+  },
+  "devDependencies": {
+    "testcafe-reporter-allure-plus": "^1.1.1"
+  }
+}

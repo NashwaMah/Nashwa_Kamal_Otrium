@@ -1,0 +1,20 @@
+{
+    "firstname": "#shipping_first_name",
+    "lastname": "#shipping_last_name",
+    "shippingEmail": "#shipping_email",
+    "shippingEmailRepeat": "#shipping_email_repeat",
+    "phone": "#shipping_phone",
+    "country": "#select2-shipping_country-container",
+    "postalcode": "#shipping_postcode",
+    "houseNumber": "#shipping_house_number",
+    "continuoCheckout": ".continue-checkout",
+    "creditcard": "#payment_method_mollie_wc_gateway_creditcard",
+    "countrytext": ".select2-search__field",
+    "shippingAddress": "#ship-to-different-address-checkbox",
+    "billingfirstname": "#billing_first_name",
+    "billinglastname": "#billing_last_name",
+    "billingcountryfield": "#billing_country_field",
+    "billingpostcode": "#billing_postcode",
+    "billinghousenumber": "#billing_house_number",
+    "placeOrder": "#place_order"
+}

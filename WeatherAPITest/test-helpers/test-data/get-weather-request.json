@@ -1,0 +1,29 @@
+{
+    "request":[
+        {
+            "type":"City",
+            "query":"Egypt",
+            "units":""
+
+        },
+        {
+            "type":"City",
+            "query":"New York",
+            "units":"s"        
+        },
+        {
+            "type":"IP",
+            "query":"153.65.8.20",
+            "units":"m"
+        },
+        {
+            "type":"Zipcode",
+            "query":"99501",
+            "units":"f"
+        },
+        {
+            "type":"LatLon",
+            "query":"40.781 , -73.972"
+        }
+    ]
+}

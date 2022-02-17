@@ -1,0 +1,6 @@
+{
+    "size": "div[data-testid='product-order-select-size']",
+    "addtocart": "button[data-testid='product-order-button']",
+    "goToCart": "a[data-testid='main-header-cart-a']",
+    "item_name": ".css-1y0qwvb"
+}

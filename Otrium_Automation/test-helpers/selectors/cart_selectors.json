@@ -1,0 +1,7 @@
+{
+   "checkout": "button[data-testid='cart-continue-to-checkout-bottom-button']",
+   "items_name": "a[data-testid='cart-item-product-name-a']",
+   "items_price": "div[data-testid='cart-order-summary-total-items']",
+   "taxes": "div[data-testid='cart-order-summary-shipping-and-processing']",
+   "total_price": "div[data-testid='cart-order-summary-total-amount']"
+}
