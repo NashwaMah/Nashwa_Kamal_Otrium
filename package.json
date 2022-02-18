@@ -8,7 +8,9 @@
     "test:firefox": "testcafe firefox  ./Otrium_Automation/tests  --reporter allure,html:HTML-Reports/otrium.html -s takeOnFails=true,path=artifacts/screenshots/otrium,pathPattern='${DATE}_${TIME}/test-${TEST_INDEX}/${USERAGENT}/${TEST}_${FILE_INDEX}.png' --skip-js-errors --disable-page-caching ,spec --video artifacts/videos --video-options singleFile=true",
     "test:edge": "testcafe edge  ./Otrium_Automation/tests  --reporter allure,html:HTML-Reports/otrium.html -s takeOnFails=true,path=artifacts/screenshots/otrium,pathPattern='${DATE}_${TIME}/test-${TEST_INDEX}/${USERAGENT}/${TEST}_${FILE_INDEX}.png' --skip-js-errors --disable-page-caching ,spec --video artifacts/videos --video-options singleFile=true",
     "test:safari": "testcafe safari  ./Otrium_Automation/tests  --reporter allure,html:HTML-Reports/otrium.html -s takeOnFails=true,path=artifacts/screenshots/otrium,pathPattern='${DATE}_${TIME}/test-${TEST_INDEX}/${USERAGENT}/${TEST}_${FILE_INDEX}.png' --skip-js-errors --disable-page-caching ,spec --video artifacts/videos --video-options singleFile=true",
-    "test:api": "testcafe chrome:headless  ./WeatherAPITest/tests  --skip-js-errors --disable-page-caching"
+    "test:api": "testcafe chrome:headless  ./WeatherAPITest/tests  --skip-js-errors --disable-page-caching",
+    "test:headless": "testcafe chrome:headless  ./Otrium_Automation/tests --reporter allure,html:HTML-Reports/otrium.html -s takeOnFails=true,path=artifacts/screenshots/otrium,pathPattern='${DATE}_${TIME}/test-${TEST_INDEX}/${USERAGENT}/${TEST}_${FILE_INDEX}.png' --skip-js-errors --disable-page-caching ,spec --video artifacts/videos --video-options singleFile=true"
+
   },
   "repository": {
     "type": "git",
