@@ -38,14 +38,29 @@ Technical Assignment 2:
          Safari  : npm run test:safari 
          edge  : npm run test:edge 
   
+  * To Update search brand
 
+         Otrium_Automation/test-helpers/test-data/products.json
+         
+   * To Update Shipping details 
+
+         Otrium_Automation/test-helpers/test-data/checkout_details.json
+         
 --------------------------------                               
 Technical Assignment 3:
 ------------------------
  * To Run API automation on run below command in Terminal :
 
          npm run test:api
+         
+ * Add new API tests in below directory 
 
+         WeatherAPITest/tests/get-weather.js
+         
+ * Update API test data in below json file :
+
+        WeatherAPITest/test-helpers/test-data/get-weather-request.json
+        
 ------------------------------------------------
 * To Generate Allure report run below command in Terminal:
 
