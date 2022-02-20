@@ -1,0 +1,30 @@
+name: Api Test
+
+env:
+  email: ${{ secrets.EMAIL }} 
+  password: ${{ secrets.PASSWORD }} 
+  otrium_url: ${{ secrets.OTRIUM_URL }}
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+jobs:
+  build:
+    name: Run Tests Across Node.js Versions and Operating Systems
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        os: [ubuntu-latest, windows-latest]
+    steps:
+      - uses: actions/setup-node@v1
+        with:
+          node-version: ${{ matrix.node }}
+      - uses: actions/checkout@v1
+      - name: Run API Tests
+        uses: DevExpress/testcafe-action@latest
+        with:
+          args: "chrome  ./Otrium_Automation/tests --reporter allure,html:HTML-Reports/otrium.html -s takeOnFails=true,path=artifacts/screenshots/otrium,pathPattern='${DATE}_${TIME}/test-${TEST_INDEX}/${USERAGENT}/${TEST}_${FILE_INDEX}.png' --skip-js-errors --disable-page-caching ,spec --video artifacts/videos --video-options singleFile=true"
