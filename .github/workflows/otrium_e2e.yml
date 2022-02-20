@@ -24,7 +24,7 @@ jobs:
         with:
           node-version: ${{ matrix.node }}
       - uses: actions/checkout@v1
-      - name: Run API Tests
+      - name: Run Otrium E2E Tests
         uses: DevExpress/testcafe-action@latest
         with:
           args: "chrome:headless  ./Otrium_Automation/tests  --skip-js-errors --disable-page-caching "
