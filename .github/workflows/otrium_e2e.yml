@@ -27,4 +27,4 @@ jobs:
       - name: Run Otrium E2E Tests
         uses: DevExpress/testcafe-action@latest
         with:
-          args: "chrome:headless  ./Otrium_Automation/tests  --skip-js-errors --disable-page-caching "
+          args: "chrome  ./Otrium_Automation/tests  --skip-js-errors --disable-page-caching "
