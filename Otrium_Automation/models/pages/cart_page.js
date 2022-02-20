@@ -19,14 +19,19 @@ class CartPage {
     }
     async ValidateTotalPrice() {
 
-        const final_item_price = (await this.items_price.innerText).replace(/\€/g, '')
-        const total_price = (await this.total_price.innerText).replace(/\€/g, '')
+        const final_item_price = this.RemoveEuroSign(await this.items_price.innerText)
+        const total_price = this.RemoveEuroSign(await this.total_price.innerText)
         if (await this.taxes.innerText == "Free") {
             await t.expect(parseFloat(total_price)).eql(parseFloat(final_item_price))
         }
         else {
-            await t.expect(parseFloat(total_price)).eql(parseFloat(final_item_price) + parseFloat(await this.taxes.innerText))
+            const tax_value = this.RemoveEuroSign(await this.taxes.innerText.innerText)
+            await t.expect(parseFloat(total_price)).eql(parseFloat(final_item_price) + parseFloat(tax_value))
         }
+    }
+
+    async RemoveEuroSign(price) {
+        return price.replace(/\€/g, '')
     }
 
 }
