@@ -3,8 +3,8 @@
 name: Api Test
 
 env:
-  accesskey:  ${{ Secrets.ACCESSTOKEN }}
-  APIUrl: ${{ Secrets.APIURL }}
+  accesskey:  ${{ secrets.ACCESSTOKEN }}
+  APIUrl: ${{ secrets.APIURL }}
   
 # Controls when the workflow will run
 on:
