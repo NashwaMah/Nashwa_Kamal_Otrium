@@ -1,4 +1,4 @@
-name: Api Test
+name: Otrium E2E Test
 
 env:
   email: ${{ secrets.EMAIL }} 
