@@ -20,17 +20,15 @@ jobs:
     strategy:
       matrix:
         os: [ubuntu-latest, windows-latest]
-        node: [8, 10, 12]
     steps:
       - uses: actions/setup-node@v1
         with:
           node-version: ${{ matrix.node }}
       - uses: actions/checkout@v1
-      - name: Run TestCafe Tests
+      - name: Run API Tests
         uses: DevExpress/testcafe-action@latest
         with:
-          args: "test:api"
-
+          args: "chrome:headless ./WeatherAPITest/tests  --skip-js-errors --disable-page-caching"
 
  
   
