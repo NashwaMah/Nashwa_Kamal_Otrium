@@ -3,11 +3,8 @@
 name: Api Test
 
 env:
-  email: "islam_elfeky@hotmail.com"
-  password: "P@ssw0rd"
-  otrium_url: "https://www.otrium.com/"
-  accesskey: "9ca1df2d52bcab5998fc02b506fd1a90"
-  APIUrl: "http://api.weatherstack.com/"
+  accesskey:  ${{ secrets.accesskey }}
+  APIUrl: ${{ secrets.APIUrl }}
   
 # Controls when the workflow will run
 on:
