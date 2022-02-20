@@ -30,7 +30,10 @@ jobs:
         with:
           args: "chrome:headless ./WeatherAPITest/tests  --skip-js-errors --disable-page-caching"
 
+      - uses: dorny/test-reporter@v1.5.0
 
+        
+  
   
 
     
