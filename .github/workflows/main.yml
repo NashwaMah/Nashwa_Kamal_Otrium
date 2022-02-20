@@ -3,7 +3,7 @@
 name: Api Test
 
 env:
-  accesskey:  ${{ secrets.ACCESSTOKEN }}
+  accesskey:  ${{ secrets.ACCESSKEY }}
   APIUrl: ${{ secrets.APIURL }} 
 on:
   push:
