@@ -52,6 +52,8 @@ Technical Assignment 3:
  * To Run API automation on run below command in Terminal :
 
          npm run test:api
+         Or
+         Open Actions from github and rin API test workflow
          
  * Add new API tests in below directory 
 
