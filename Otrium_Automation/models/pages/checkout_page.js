@@ -77,7 +77,7 @@ class CheckoutPage {
         await t.expect(await payment_method.exists).ok("user redirected to Payment method page ")
     }
     async ValidatePaymentPage() {
-        await t.wait(1000)
+        await t.wait(2000)
         const getURL = await ClientFunction(() => window.location.href)();
         console.log(getURL)
         await t.expect(getURL).contains("payment")
