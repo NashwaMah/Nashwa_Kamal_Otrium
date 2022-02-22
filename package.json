@@ -4,22 +4,20 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test:chrome": "testcafe chrome  ./Otrium_Automation/tests --reporter allure,html:HTML-Reports/otrium.html -s takeOnFails=true,path=artifacts/screenshots/otrium,pathPattern='${DATE}_${TIME}/test-${TEST_INDEX}/${USERAGENT}/${TEST}_${FILE_INDEX}.png' --skip-js-errors --disable-page-caching ,spec --video artifacts/videos --video-options singleFile=true",
-    "test:firefox": "testcafe firefox  ./Otrium_Automation/tests  --reporter allure,html:HTML-Reports/otrium.html -s takeOnFails=true,path=artifacts/screenshots/otrium,pathPattern='${DATE}_${TIME}/test-${TEST_INDEX}/${USERAGENT}/${TEST}_${FILE_INDEX}.png' --skip-js-errors --disable-page-caching ,spec --video artifacts/videos --video-options singleFile=true",
-    "test:edge": "testcafe edge  ./Otrium_Automation/tests  --reporter allure,html:HTML-Reports/otrium.html -s takeOnFails=true,path=artifacts/screenshots/otrium,pathPattern='${DATE}_${TIME}/test-${TEST_INDEX}/${USERAGENT}/${TEST}_${FILE_INDEX}.png' --skip-js-errors --disable-page-caching ,spec --video artifacts/videos --video-options singleFile=true",
-    "test:safari": "testcafe safari  ./Otrium_Automation/tests  --reporter allure,html:HTML-Reports/otrium.html -s takeOnFails=true,path=artifacts/screenshots/otrium,pathPattern='${DATE}_${TIME}/test-${TEST_INDEX}/${USERAGENT}/${TEST}_${FILE_INDEX}.png' --skip-js-errors --disable-page-caching ,spec --video artifacts/videos --video-options singleFile=true",
-    "test:api": "testcafe chrome:headless  ./WeatherAPITest/tests  --skip-js-errors --disable-page-caching",
-    "test:headless": "testcafe chrome:headless  ./Otrium_Automation/tests --reporter allure,html:HTML-Reports/otrium.html -s takeOnFails=true,path=artifacts/screenshots/otrium,pathPattern='${DATE}_${TIME}/test-${TEST_INDEX}/${USERAGENT}/${TEST}_${FILE_INDEX}.png' --skip-js-errors --disable-page-caching ,spec --video artifacts/videos --video-options singleFile=true"
-
+    "test:chrome": "testcafe chrome  --config-file configurations/otrium.testcaferc.json",
+    "test:firefox": "testcafe firefox  --config-file configurations/otrium.testcaferc.json",
+    "test:edge": "testcafe edge  --config-file configurations/otrium.testcaferc.json",
+    "test:safari": "testcafe safari  --config-file configurations/otrium.testcaferc.json",
+    "test:api": "testcafe --config-file configurations/weatherapi.testcaferc.json"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/NashwaMah/Nashwa-Kamal-Otrium.git"
+    "url": "git+https://github.com/NashwaMah/Nashwa_Kamal_Otrium.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/NashwaMah/Nashwa-Kamal-Otrium/issues"
+    "url": "https://github.com/NashwaMah/Nashwa_Kamal_Otrium/issues"
   },
   "homepage": "https://github.com/NashwaMah/Nashwa-Kamal-Otrium#readme",
   "dependencies": {

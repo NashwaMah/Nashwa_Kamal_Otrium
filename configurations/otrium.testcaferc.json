@@ -1,0 +1,27 @@
+{
+    "skipJsErrors": true,
+    "src": [
+        "./Otrium_Automation/tests"
+    ],
+    "reporter": [
+        {
+            "name": "html",
+            "output": "HTML-Reports/otrium.html"
+        },
+        {
+            "name": "allure"
+        }
+    ],
+    "screenshots": {
+        "takeOnFails": true,
+        "pathPattern": "${DATE}_${TIME}/test-${TEST_INDEX}/${USERAGENT}/${FILE_INDEX}.png",
+        "screenshotPath": "artifacts/screenshots/otrium"
+    },
+    "disablePageCaching": true,
+    "videoOptions": {
+        "singleFile": true,
+        "failedOnly": true,
+        "pathPattern": "${TEST_INDEX}/${USERAGENT}/${FILE_INDEX}.mp4"
+    },
+    "videoPath": "artifacts/videos"
+}

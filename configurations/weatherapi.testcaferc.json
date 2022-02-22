@@ -1,0 +1,12 @@
+{
+    "skipJsErrors": true,
+    "browsers": "chrome:headless",
+    "src": [
+        "./WeatherAPITest/tests"
+    ],
+    "reporter": {
+        "name": "html",
+        "output": "HTML-Reports/weatherApi.html"
+    },
+    "disablePageCaching": true
+}
